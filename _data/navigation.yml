@@ -2,8 +2,5 @@ header:
   - title: 아카이브
     url: /archive.html
 
-  - title: 소개
-    url: /about.html
-
-  - title: 포스트
-    url: /post.html
+#  - title: 소개
+#    url: /about.html
