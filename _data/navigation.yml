@@ -2,5 +2,19 @@ header:
   - title: 아카이브
     url: /archive.html
 
-#  - title: 소개
-#    url: /about.html
+  #  - title: 소개
+  #    url: /about.html
+
+sideLayout:
+  - title:      Start
+    children:
+      - title: 아카이브
+        url: /archive.html
+      - title: 소개
+        url: /about.html
+  - title:      Customization
+    children:
+      - title: 아카이브
+        url: /archive.html
+      - title: 소개
+        url: /about.html
