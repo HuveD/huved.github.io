@@ -4,7 +4,7 @@ tag: NoSQL
 ---
 
 # 플랫 파일 데이터베이스
-![FlatDatabase Info](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/assets/images/nosql/img_flat_database.png) 
+![FlatDatabase Info](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_flat_database.png) 
 
 자기테이프나 디스크 같은 물리적 저장 공간 속 ‘데이터 블록’에 데이터를 기록하는 방식. 테이프의 특정 위치부터 순차적으로 블록을 읽는 간단한 방식으로 동작한다.
 
@@ -29,11 +29,11 @@ tag: NoSQL
 - 특정 정보를 비공개로 두고 싶은 경우 파일을 두개로 나눠야 한다. **[예시 1]** 에서 전화번호 없이 이름만 있는 데이터 파일이 필요한 경우 전화번호와 이름이 함께 있는 데이터 파일과 이름만 있는 데이터 파일 2가지로 나눠야 한다. 이때 신규 정보 등록이나 기존 정보 제거가 필요한 경우 2개 파일 모두 대응해야 돼서 관리가 어렵다.
 
 # 계층형 데이터베이스
-![FlatDatabase Info](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/assets/images/nosql/img_hierarchy_database1.png)
+![FlatDatabase Info](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_hierarchy_database1.png)
 
 부모-자식 관계의 계층형 구조로 플랫 파일 데이터베이스의 낮은 검색 능력 문제를 해결한다. 계층형 데이터베이스에서 101동에 전체 호수를 검색하기 위해서는 101동의 하위 계층만 확인하면 된다. (102동, 103동의 하위 목록은 확인할 필요가 없음.)
 
-![FlatDatabase Info](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/assets/images/nosql/img_compare_with_flat.png)
+![FlatDatabase Info](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_compare_with_flat.png)
 
 하지만, 플랫 파일 데이터베이스에서는 101동에 사는 전체 호수를 검색하기 위해 테이프의 처음부터 끝까지 읽어야한다. (201호가 테이프 맨 뒤에 있을 수도 있기 때문)
 
@@ -43,7 +43,7 @@ tag: NoSQL
 ## 한계점
 - 계층형 데이터베이스는 하나의 부모만을 가질 수 있다. 두개 부모의 공통으로 소속된 정보를 표현하려는 경우 똑같은 데이터를 복제하여 유지하여야 한다. 데이터 변경이 생길 때마다 두개 모두 수정이 필요하여 관리가 불편하다.
 
-![FlatDatabase Info](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/assets/images/nosql/img_hierarchy_database2.png)
+![FlatDatabase Info](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_hierarchy_database2.png)
 
 - 데이터 집계시 중복 데이터를 고려하여 집계해야 한다. 예를 들어 101동 1층의 소화기 수를 집계할 때 실제 소화기 수는 1개이지만, 데이터베이스는 복사본이 존재하기 때문에 2개로 집계되는 오류가 생긴다.
 
@@ -53,7 +53,7 @@ tag: NoSQL
 
 단, 단방향으로 접근이 가능하기 때문에 역행하여 접근하는 것은 불가능하다.
 
-![FlatDatabase Info](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/assets/images/nosql/img_network_database.png)
+![FlatDatabase Info](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_network_database.png)
 
 ## 장점
 - 복수의 부모와 자식을 가질 수 있기 때문에 계층형 데이터베이스처럼 소화기를 복제하여 가질 필요가 없다.
