@@ -26,7 +26,7 @@ tag: NoSQL
 필요한 경우 데이터를 메모리로 가져와 유지하고, 더 이상 필요하지 않을 때 메모리를 해제하는 역할을 한다. 메모리에서 데이터를 접근하는 것이 디스크에서 읽는 것보다 빠르기 때문에 메모리 관리 효율에 따라서 RDBMS의 전체 성능이 크게 달라진다.
 
 ### 데이터 사전
-![Database scheme structure](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_scheme_structure.png){: width="70%" height="70%"}{: .center}
+![Database scheme structure](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_scheme_structure.png){: width="50%" height="50%"}{: .center}
 
 데이터 사전은 데이터베이스에 저장된 데이터의 구조 정보를 파악하는 역할을 한다. 가장 기본이 되는 스키마란 테이블, 뷰, 인덱스, 데이터 집합 등의 데이터의 구조를 나타내는 단위다.
 
