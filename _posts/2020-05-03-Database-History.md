@@ -1,6 +1,7 @@
 ---
 title: 초기 데이터베이스 관리 시스템
 tag: NoSQL
+comments: true
 ---
 
 ## 플랫 파일 데이터베이스

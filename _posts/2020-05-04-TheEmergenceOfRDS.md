@@ -1,6 +1,7 @@
 ---
 title: 관계형 데이터베이스의 등장
 tag: NoSQL
+comments: true
 ---
 
 ## 관계형 데이터베이스
