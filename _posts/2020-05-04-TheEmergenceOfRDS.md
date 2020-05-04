@@ -1,5 +1,5 @@
 ---
-title: 관계형 데이터베이스의 등장
+title: 관계형 데이터베이스와 한계점
 tag: NoSQL
 comments: true
 ---
