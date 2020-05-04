@@ -1,6 +1,6 @@
 ---
-title: 초기 데이터베이스 관리 시스템
-tag: NoSQL
+title: NoSQL을 알아보자(1) - 초기 데이터베이스 관리 시스템
+tag: [NoSQL, NoSQL을 알아보자]
 comments: true
 ---
 

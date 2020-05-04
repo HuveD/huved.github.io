@@ -1,6 +1,6 @@
 ---
-title: 관계형 데이터베이스와 한계점
-tag: NoSQL
+title: NoSQL을 알아보자(2) - 관계형 데이터베이스와 한계점
+tag: [NoSQL, NoSQL을 알아보자]
 comments: true
 ---
 
