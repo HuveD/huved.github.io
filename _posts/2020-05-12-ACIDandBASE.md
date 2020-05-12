@@ -12,13 +12,11 @@ comments: true
 
 ![Atomicity Example1](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_atomicity1.png){: width="65%" height="65%"}{: .center}
 
-내 계좌에 있는 100만원을 저금하는 것을 하나의 트랜잭션이라 가정해보자. 해당 트랜잭션은 내부적으로 2개의 단계로 나눠질 수 있다.
+내 계좌에 있는 100만원을 저금하는 것을 하나의 트랜잭션이라 가정해보자. 해당 트랜잭션은 내부적으로 2개의 단계로 나눠질 수 있다. 먼저 내 계좌에서 100만원을 출금을 한뒤 은행 잔고에 100만원을 입금하는 방식이다.
 
 <br/>
 
 ![Atomicity Example2](https://raw.githubusercontent.com/huved/huved.github.io/master/assets/images/nosql/img_atomicity2.png){: width="750%" height="75%"}{: .center}
-
-먼저 내 계좌에서 100만원을 출금을 한뒤 은행 잔고에 100만원을 입금하는 방식이다.
 
 이 예시에서 원자성은 ‘100만원 저금’이라는 하나의 행위를 최소의 단위로 여기는 것이다. ‘100만원을 출금’, ‘100만원을 입금’ 두 가지 내부 과정은 최소 단위가 되어선 안된다. 만약 100만원 출금만 성공하고 100만원 입금은 실패한 경우, 100만원만 빠져나가고 은행 잔고는 그대로인 경우가 발생하면 안된다. 
 
