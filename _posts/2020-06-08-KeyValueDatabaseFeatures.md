@@ -11,7 +11,9 @@ Key-Value 데이터베이스는 특정 키를 요청하면 해당하는 데이�
 
 예를들어 배열의 경우 크기가 5인 int형 배열이 있다고 가정해보자.
 
+<pre>
 int[] array = new int[5];
+</pre>
 
 이렇게 선언된 ‘array’는 5개의 값을 가질 수 있다. 첫 번째 값을 가져오기 위해서는 array[0], 두 번째 값을 가져오기 위해서는 array[1] 이런 방식으로 데이터를 가져올 수 있다.
 
@@ -19,13 +21,17 @@ int[] array = new int[5];
 
 Key-Value 데이터베이스는에서는 아래와 같은 방식으로 키 값을 사용할 수 있다.
 
+<pre>
 user[“VipUser1”] = “Pino”
+</pre>
 
 또 다른 특징은 값에 형태를 제한하지 않는다는 것이다. 위에 크기가 5인 int형 배열 ‘array’의 경우 5개의 공간 모두 int 형태만 저장할 수 있다. 반면 Key-Value 데이터베이스는 같은 공간에 다양한 형태의 데이터를 저장할 수 있다.
 
+<pre>
 user[“VipUser1”] = “Pino”
 user[“VipUser2”] = 910927
 user[929323] = “Jame”
+</pre>
 
 위와 같은 예시처럼 Key-Value 데이터는 Key와 Value 형태가 매우 자유롭다.
 
