@@ -1,6 +1,6 @@
 ---
 title:  NoSQL을 알아보자(6) - Key-Value 데이터베이스의 무결성
-tag: [NoSQL, NoSQL을 알아보자]
+tag: [NoSQL, NoSQL을 알아보자, Key-Value Database]
 comments: true
 ---
 [지난 포스트](https://huved.github.io/2020/06/08/KeyValueDatabaseFeatures.html) 에서 Key-Value 데이터베이스는 Master-Slave 방식 또는 Masterless 방식을 이용해 확장성을 관리한다고 했다.
