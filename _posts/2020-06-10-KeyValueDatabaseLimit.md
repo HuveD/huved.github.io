@@ -13,21 +13,21 @@ Key-Value 방식의 데이터 조작은 양날의 검이다. 빠르고 단순하
 만약 학번, 주민 등록 번호, 사원 번호 등으로 정보를 조회해야 된다고 가정했을 때 한 두명의 Key라면 기억하는 것이 어렵지 않다. 하지만 수천 수만 명의 정보를 다루고 있다면 특정 번호로 정보를 조회하기는 쉽지 않다. 특정 상황에서 단순함이 장점인 Key-Value 시스템은 역설적으로 복잡함을 야기한다.
 
 <pre>
-Cust:1 {id: 999231, name: Sam, age: 18}
-Cust:2 {id: 646038, name: Seo, age: 43}
-Cust:3 {id: 321237, name: Lee, age: 54}
-Cust:4 {id: 955234, name: Yoo, age: 25}
-.
-.
-.
-Cust::1000000 {id: 421323, name: Son, age: 28}
+    Cust:1 {id: 999231, name: Sam, age: 18}
+    Cust:2 {id: 646038, name: Seo, age: 43}
+    Cust:3 {id: 321237, name: Lee, age: 54}
+    Cust:4 {id: 955234, name: Yoo, age: 25}
+            .
+            .
+            .
+    Cust::1000000 {id: 421323, name: Son, age: 28}
 </pre>
 
 <br></br>
 예를 들어 100만명의 고객이 있는 경우 id가 856454인 고객의 나이를 조회하고 싶다면 어떻게 해야될까? 일반적인 관계형 데이터베이스는 질의언어로 쉽게 조회할 수 있다. 
 
 <pre>
-SELECT Cust.age from Cust WHERE id=856454
+    SELECT Cust.age from Cust WHERE id=856454
 </pre>
 
 <br></br>

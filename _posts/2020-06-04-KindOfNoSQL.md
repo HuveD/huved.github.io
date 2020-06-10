@@ -11,10 +11,10 @@ comments: true
 
 이런 경우는 엔터티의 유형과 일련 번호를 포함하여 키 값을 정의하면 해결할 수 있다. 예를 들어 볼펜 두 개와 샤프 두 개를 판다 가정했을 때 각각의 가격 키 값은 아래처럼 될 것이다.
 <pre>
-ballpoint1.price
-ballpoint2.price
-sharp1.price
-sharp2.price
+    ballpoint1.price
+    ballpoint2.price
+    sharp1.price
+    sharp2.price
 </pre>
 
 키의 고유성은 네임 스페이스에 국한되어 있다. 즉 네임 스페이스가 서로 다른 경우는 똑같은 키를 사용하여도 문제없다.
@@ -30,22 +30,22 @@ Document 데이터베이스의 가장 큰 특징은 고정된 구조를 정의�
 같은 볼펜이여도 가지고 있는 데이터의 종류는 서로 다를 수도 있다. 아래 예시를 살펴보자.
 
 <pre>
-{
-    name: “코나미”,  
-    price: 500,  
-    color: “Black”  
-}
+    {
+        name: “코나미”,  
+        price: 500,  
+        color: “Black”  
+    }
 </pre>
 
 코나미 볼펜은 이름, 가격, 색상 3가지 정보를 가지고 있다.
 
 <pre>
-{  
-    name: “재팬테크”,  
-    price: 1000,  
-    color: “Blue”,  
-    brand: “J-Tech”  
-}
+    {  
+        name: “재팬테크”,  
+        price: 1000,  
+        color: “Blue”,  
+        brand: “J-Tech”  
+    }
 </pre>
 
 반면 재팬테크 볼펜은 이름, 가격, 색상, 브랜드 4가지 정보를 가지고 있다. 문서의 정보는 차이가 있지만 데이터베이스 자체에서 문제는 없다.
@@ -55,7 +55,7 @@ Document 데이터베이스는 이처럼 유연성을 확보할 수 있지만, �
 Document 데이터베이스는 아래와 같은 방식으로 데이터를 질의하여 획득할 수 있다.
 
 <pre>
-Database.pen.find({color:”Black”})
+    Database.pen.find({color:”Black”})
 </pre>
 
 위의 명령어를 통한 결과는 펜 문서에서 색상이 Black인 펜을 모두 조회할 수 있다. 질의할 때 관계형 데이터베이스처럼 AND, OR, >, < 등의 연산자를 사용할 수 있다. 단 Document 데이터베이스는 값으로 리스트나 다른 문서를 포함할 수 있기 때문에 관계형 데이터베이스에서 조인을 사용하듯 문서를 조인할 필요는 없다. 
