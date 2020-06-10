@@ -1,5 +1,5 @@
 ---
-title:  NoSQL을 알아보자(5) - Key-Value 데이터베이스 특징
+title:  NoSQL을 알아보자(6) - Key-Value 데이터베이스 특징
 tag: [NoSQL, NoSQL을 알아보자, Key-Value Database]
 comments: true
 ---
