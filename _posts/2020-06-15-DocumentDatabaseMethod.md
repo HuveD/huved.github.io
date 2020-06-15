@@ -8,13 +8,17 @@ Document 데이터베이스도 다른 데이터베이스처럼 4가지 기본 �
 
 ## 삽입
 <pre>
+
 	db.member.insert({“name” : “John”, “age” : 25})
+	
 </pre>
 
 위에 예시는 ‘member’ Collection에서 ‘John’이라는 멤버를 추가하는 예시이다. Collection에 Document를 추가할 때는 아래처럼 고유 식별자를 함께 추가하는 것이 좋다.
 
 <pre>
+
 	db.member.insert({“id” : 1321, “name” : “John”, “age” : 25})
+	
 </pre>
 
 고유 식별자는 사용하는 Document 데이터베이스의 종류에 따라 권장되는 식별자 형태도 다르다. 어떤 유형의 고유 식별자를 사용할지는 직접 사용하는 Document 데이터베이스의 문서를 확인할 필요가 있다.
@@ -25,7 +29,9 @@ Document 데이터베이스도 다른 데이터베이스처럼 4가지 기본 �
 ## 삭제
 
 <pre>
+
 	db.member.remove({“id” : 1321})
+	
 </pre>
 
 위에 remove 명령어는 멤버 Collection에서 고유 식별자가 1321인 멤버를 제거하는 예시이다. 만약 remove 명령어의 매개변수가 없이 remove 명령어만 호출된다면 해당 Collection의 모든 Document를 제거하는 명령어가 된다.
